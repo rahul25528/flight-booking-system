@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2>Add New Flight</h2>
+<form method="POST">
+  <input name="flight_no" placeholder="Flight No" required>
+  <input name="source" placeholder="From" required>
+  <input name="destination" placeholder="To" required>
+  <input name="date" type="date" required>
+  <input name="time" type="time" required>
+  <input name="seats" type="number" required>
+  <input name="price" type="number" required>
+  <button type="submit">Add</button>
+</form>

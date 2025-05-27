@@ -1,0 +1,94 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Forms */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button, .btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Alert / Messages */
+.alert {
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+    background-color: #f44336; /* Red */
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+.logout-link {
+    float: right;
+    color: red;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}

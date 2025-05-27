@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2>Available Flights</h2>
+<table border="1">
+  <tr><th>No</th><th>Flight No</th><th>From</th><th>To</th><th>Action</th></tr>
+  {% for flight in flights %}
+  <tr>
+    <td>{{ flight[0] }}</td>
+    <td>{{ flight[1] }}</td>
+    <td>{{ flight[2] }}</td>
+    <td>{{ flight[3] }}</td>
+    <td><a href="/book_flight/{{ flight[0] }}">Book</a></td>
+  </tr>
+  {% endfor %}
+</table>
